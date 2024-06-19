@@ -1,0 +1,11 @@
+<div class="container">
+
+    <a href="/cad"><button>Cadastrar</button></a>
+    <h1>Lista de resumos de livros</h1>
+
+    {{#each resumos}}
+        <h1>{{dataValues.titulo}}</h1>
+        <p>{{dataValues.resumo}}</p>
+        <a href="/excluir/{{dataValues.id}}"><button>Excluir</button></a>
+    {{/each}}
+</div>
